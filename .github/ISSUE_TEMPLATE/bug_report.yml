@@ -1,0 +1,22 @@
+name: Bug Report
+description: 回報一個錯誤或問題
+title: "[Bug] "
+labels: ["bug"]
+assignees: []
+
+body:
+  - type: input
+    id: system-info
+    attributes:
+      label: 系統資訊
+      placeholder: 請輸入作業系統與瀏覽器版本等
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 發生了什麼事？
+      placeholder: 請詳細描述問題
+    validations:
+      required: true

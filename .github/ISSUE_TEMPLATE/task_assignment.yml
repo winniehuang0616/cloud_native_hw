@@ -1,0 +1,59 @@
+name: 工作分派
+description: 指派工作給團隊成員
+title: "[Task] 任務標題"
+labels: ["task", "to-do"]
+assignees: []
+
+body:
+  - type: input
+    id: task-title
+    attributes:
+      label: 任務名稱
+      placeholder: 請簡短輸入這項任務的標題（會顯示在列表中）
+    validations:
+      required: true
+
+  - type: textarea
+    id: task-details
+    attributes:
+      label: 任務內容說明
+      placeholder: 請詳細描述這項任務的背景、目標與具體要求
+    validations:
+      required: true
+
+  - type: input
+    id: due-date
+    attributes:
+      label: 預計完成時間
+      placeholder: yyyy-mm-dd
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 優先順序
+      options:
+        - 高
+        - 中
+        - 低
+    validations:
+      required: true
+
+  - type: input
+    id: assignee
+    attributes:
+      label: 指派對象
+      placeholder: 輸入 GitHub 帳號，例如 @username
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 檢查清單
+      description: 可提前列出工作步驟供追蹤
+      options:
+        - label: 任務已討論清楚
+        - label: 已建立相關文件或 PR
+        - label: 已通知負責人
