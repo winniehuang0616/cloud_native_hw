@@ -7,7 +7,7 @@
       }
     }
   ],
-  "ignorePatterns": ["**/components/ui"],
+  "ignorePatterns": ["**/components/ui", "jest.config.ts", "babel.config.js"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "project": "./tsconfig.json"
