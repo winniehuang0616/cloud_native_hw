@@ -1,0 +1,25 @@
+{
+  "overrides": [
+    {
+      "files": ["*.mjs", "*.ts", "*.tsx"],
+      "parserOptions": {
+        "project": "tsconfig.json"
+      }
+    }
+  ],
+  "ignorePatterns": ["**/components/ui"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "@typescript-eslint/consistent-type-imports": "warn",
+    "@typescript-eslint/no-non-null-assertion": "off"
+  }
+}
