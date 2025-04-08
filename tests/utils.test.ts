@@ -5,5 +5,5 @@ test("devide() should return correct result", () => {
 });
 
 test("devide(6, 0) should throw error", () => {
-    expect(() => devide(6, 0)).toThrow("Zero division not allowed");
-  });
+  expect(() => devide(6, 0)).toThrow("Zero division not allowed");
+});
